@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="2" column="1">
-     <widget class="PlotWidget" name="widget_3" native="true"/>
+     <widget class="timePlot" name="Mag_plot" native="true"/>
     </item>
     <item row="0" column="3" rowspan="3">
      <spacer name="horizontalSpacer">
@@ -35,7 +35,7 @@
      </spacer>
     </item>
     <item row="0" column="1">
-     <widget class="PlotWidget" name="widget" native="true"/>
+     <widget class="timePlot" name="Accel_plot" native="true"/>
     </item>
     <item row="0" column="2">
      <widget class="QWidget" name="widget_4" native="true">
@@ -155,7 +155,7 @@
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="PlotWidget" name="widget_2" native="true"/>
+     <widget class="timePlot" name="Rate_plot" native="true"/>
     </item>
     <item row="1" column="0">
      <spacer name="horizontalSpacer_2">
@@ -423,9 +423,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PlotWidget</class>
+   <class>timePlot</class>
    <extends>QWidget</extends>
-   <header>pyqtgraph.h</header>
+   <header>timeplot.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
